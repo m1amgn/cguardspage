@@ -1,0 +1,132 @@
+{
+  "blockchains": [
+    {
+      "name": "Cosmos",
+      "mainnet": true,
+      "logo": "https://app.osmosis.zone/tokens/generated/atom.svg",
+      "description": "Cosmos is a decentralized network of independent parallel blockchains. ATOM, the native cryptocurrency of the Cosmos network, is essential for achieving the project's goal of creating an 'Internet of Blockchains.' Launched in 2019, Cosmos aims to solve the scalability, usability, and interoperability issues prevalent in existing blockchain ecosystems. The Cosmos Hub, the central blockchain of the network, uses ATOM for transaction fees, staking, and governance. By staking ATOM, users can earn rewards and participate in governance, influencing decisions on network upgrades and changes.",
+      "developerLink": "https://cosmos.network/"
+    },
+    {
+      "name": "Osmosis",
+      "mainnet": true,
+      "logo": "https://app.osmosis.zone/tokens/generated/osmo.svg",
+      "description": "Osmosis (OSMO) is the premier DEX and cross-chain DeFi hub within the Cosmos ecosystem, a network of over 50 sovereign, interoperable blockchains seamlessly connected through the Inter-Blockchain Communication Protocol (IBC). Pioneering in its approach, Osmosis offers a dynamic trading and liquidity provision experience, integrating non-IBC assets from other ecosystems, including Ethereum, Solana, Avalanche, and Polkadot. Initially adopting Balancer-style pools, Osmosis now also features a concentrated liquidity model that is orders of magnitude more capital efficient, meaning that significantly less liquidity is required to handle the same amount of trading volume with minimal slippage.",
+      "developerLink": "https://osmosis.zone/"
+    },
+    {
+      "name": "Secret Network",
+      "mainnet": true,
+      "logo": "https://app.osmosis.zone/tokens/generated/scrt.svg",
+      "description": "Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.",
+      "developerLink": "https://scrt.network/"
+    },
+    {
+      "name": "Agoric",
+      "mainnet": true,
+      "logo": "https://app.osmosis.zone/tokens/generated/bld.svg",
+      "description": "Agoric is a secure, decentralized smart contract platform. Agoric is a smart contract platform that uses JavaScript to enable developers to build secure and scalable decentralized applications (dApps) easily.",
+      "developerLink": "https://agoric.com/"
+    },
+    {
+      "name": "Nibiru",
+      "mainnet": true,
+      "logo": "https://app.osmosis.zone/tokens/generated/nibi.svg",
+      "description": "Nibiru is a decentralized finance platform. Nibiru hosts a variety of ecosystem partners in a wide variety of consumer sectors. From RWAs (Coded Estate) to DeFi (Constella, NOM) to Gaming (Blockchain Game Alliance, IntoTheVerse), Nibiru is advancing multiple emerging blockchain narratives that will onboard the next billion users.",
+      "developerLink": "https://nibiru.fi/"
+    },
+    {
+      "name": "Sputnik Network",
+      "mainnet": false,
+      "logo": "https://docs.sputniknetwork.digital/~gitbook/image?url=https%3A%2F%2F4181276134-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDLfrEiPChR9U2aAlWxri%252Ficon%252F5SdFNZ9OLjxfHxyp3hVP%252Fsputnik1024.png%3Falt%3Dmedia%26token%3D0cabab83-28fa-47a0-a204-c287b6891190&width=32&dpr=1&quality=100&sign=c21c1d1&sv=1",
+      "description": "Sputnik Network App-Chain is the part of future PostState Blockchain Sputnik Network will be Cosmos Ecosystem Hub to send and recieve crypto, and also to recieve airdrops: InterChain Accounts; Ranking users by the received airdrops with predefined parameters; Provide lists of stakers for Cosmos Ecosystem projects to distribute airdrops; Helping users to claim or recieve airdrops; Sending transactions to list of users by addresses or username of Telegram, Twitter, Discord; A simple tool for scheduling and distributing airdrops",
+      "developerLink": "https://sputniknetwork.digital/"
+    },
+    {
+      "name": "Berachain",
+      "mainnet": false,
+      "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/24647.png",
+      "description": "Berachain is a high-performance EVM-Identical Layer 1 (L1) blockchain utilizing Proof-of-Liquidity (PoL) as a consensus mechanism, and built on top of a modular evm-focused consensus client framework named BeaconKit.",
+      "developerLink": "https://berachain.com/"
+    }
+  ],
+  "communityContributions": [
+    {
+      "logo": "logo-dvs.png",
+      "description": "Participation in DVS community.",
+      "link": "https://cosmos.network/"
+    },
+    {
+      "logo": "logo-posthuman.png",
+      "description": "Cooperation with POSTHUMAN validator.",
+      "link": "https://cosmos.network/"
+    },
+    {
+      "logo": "logo-validator-school.png",
+      "description": "Studying in Validator School.",
+      "link": "https://cosmos.network/"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Assisting community members with technical issues, helping them understand and navigate the blockchain network.",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Taking apart in workshops and webinars to educate the community about blockchain technology, its benefits, and how to participate in the network.",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Creating and sharing guides that make it easier for others to use and contribute to the blockchain network",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Participating in network governance by voting on proposals and changes, ensuring that community voices are heard and considered",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "By maintaining decentralized networks, validators empower individuals with greater control over their personal data and financial assets.",
+      "link": "https://github.com/Consensus-Guadrs"
+    }
+  ],
+  "technicalContributions": [
+    {
+      "logo": "logo4.png",
+      "description": "Constant maintenance of the nodes.",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Verifing the validity of transactions submitted to the blockchain, ensuring they follow the network's rules and preventing double-spending.",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Implementation and testing software updates and upgrades to improve the network's functionality, security, and performance.",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "No slashing, 100% return in case of slashing.",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Development of new services and help the community to use new services.",
+      "link": "https://github.com/Consensus-Guadrs"
+    },
+    {
+      "logo": "logo4.png",
+      "description": "Installing nodes on the most resilient servers in the most appropriate locations.",
+      "link": "https://github.com/Consensus-Guadrs"
+    }
+  ],
+  "contactLinks": {
+    "mintscan": "https://mintscan.io",
+    "github": "https://github.com/Consensus-Guadrs",
+    "gmail": "mailto:info@cgaurds.pro"
+  }
+}
