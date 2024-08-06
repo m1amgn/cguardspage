@@ -1,14 +1,9 @@
 <template>
   <div class="community-contributions">
-    <h1>Community Contributions</h1>
+    <h2>Community Contributions</h2>
     <div class="contributions-list">
-      <a
-        v-for="(contribution, index) in contributions"
-        :key="index"
-        :href="contribution.link"
-        target="_blank"
-        class="contribution-link"
-      >
+      <a v-for="(contribution, index) in contributions" :key="index" :href="contribution.link" target="_blank"
+        class="contribution-link">
         <div class="contribution">
           <img :src="contribution.logo" :alt="contribution.description">
           <div class="contribution-details">
@@ -51,7 +46,8 @@ export default {
 }
 
 .contributions-list {
-  max-height: 400px; /* Adjust height as needed */
+  max-height: 350px;
+  /* Adjust height as needed */
   overflow-y: auto;
   margin-top: 20px;
   padding-right: 10px;
@@ -61,7 +57,8 @@ export default {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the blocks */
+  align-items: center;
+  /* Center the blocks */
 }
 
 /* Custom scrollbar styles */
@@ -86,10 +83,13 @@ export default {
 
 .contribution-link {
   text-decoration: none;
-  color: inherit; /* Ensures the text color inherits from the parent */
-  width: 100%; /* Ensure links take full width */
+  color: inherit;
+  /* Ensures the text color inherits from the parent */
+  width: 100%;
+  /* Ensure links take full width */
   display: flex;
-  justify-content: center; /* Center the blocks */
+  justify-content: center;
+  /* Center the blocks */
 }
 
 .contribution {
@@ -101,8 +101,10 @@ export default {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  width: 80%; /* Fixed width for better alignment */
-  max-width: 600px; /* Optional: Set a max width */
+  width: 90%;
+  /* Fixed width for better alignment */
+  max-width: 700px;
+  /* Optional: Set a max width */
 }
 
 .contribution:hover {
@@ -120,13 +122,16 @@ export default {
 .contribution-details {
   text-align: left;
   color: #ffffff;
-  max-width: 70%; /* Set a maximum width for the details */
-  word-wrap: break-word; /* Break long words */
+  max-width: 70%;
+  /* Set a maximum width for the details */
+  word-wrap: break-word;
+  /* Break long words */
 }
 
 .contribution p {
   margin: 0;
-  white-space: pre-line; /* Allow wrapping */
+  white-space: pre-line;
+  /* Allow wrapping */
 }
 
 /* Responsive styles */
@@ -134,12 +139,12 @@ export default {
   .community-contributions {
     padding: 10px;
   }
-  
+
   .contributions-list {
-    max-height: 300px;
+    max-height: 500px;
     padding: 10px;
   }
-  
+
   .contribution {
     width: 90%;
     flex-direction: column;
@@ -153,10 +158,6 @@ export default {
   .contribution-details {
     max-width: 100%;
     text-align: center;
-  }
-
-  .contribution p {
-    font-size: 1.2em;
   }
 }
 </style>

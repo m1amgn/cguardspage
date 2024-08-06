@@ -5,7 +5,7 @@
         <img src="logo-mintscan.png" alt="Mintscan">
       </a>
       <a :href="contactLinks.github" target="_blank">
-        <img src="github-mark.png" alt="GitHub">
+        <img src="github-mark-white.svg" alt="GitHub">
       </a>
       <a :href="contactLinks.gmail" target="_blank">
         <img src="email.png" alt="Email">
@@ -37,7 +37,6 @@ export default {
 <style scoped>
 .footer {
   background-color: transparent;
-  padding: 10px;
   text-align: center;
   width: 100%;
   position: fixed;
@@ -51,11 +50,11 @@ export default {
 }
 
 .social-icons img {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   margin: 0 10px;
   transition: transform 0.3s;
-  margin: 20px 20px;
+  margin: 10px 100px;
 }
 
 .social-icons img:hover {
@@ -69,14 +68,10 @@ export default {
   }
 
   .social-icons img {
-    margin: 10px 10px;
+    width: 28px;
+    height: 28px;
+    margin: 0 50px;
+    transition: transform 0.3s;
   }
-
-  .social-icons img {
-  width: 36px;
-  height: 36px;
-  margin: 0 10px;
-  transition: transform 0.3s;
-}
 }
 </style>

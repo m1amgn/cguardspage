@@ -4,13 +4,13 @@
       <img src="/logo.png" alt="Logo">
       <p>Better than just a validator</p>
     </div>
-    <ul class="nav-links">
-      <li><router-link to="/home">Home</router-link></li>
-      <li><router-link to="/mainnets">Mainnets</router-link></li>
-      <li><router-link to="/testnets">Testnets</router-link></li>
-      <li><router-link to="/community-contributions">Community</router-link></li>
-      <li><router-link to="/technical-contributions">Technical</router-link></li>
-      <li><router-link to="/guides">Guides</router-link></li>
+    <ul :class="['nav-links', { 'nav-active': isNavActive }]">
+      <li><router-link to="/home" @click="closeNav">Home</router-link></li>
+      <li><router-link to="/mainnets" @click="closeNav">Mainnets</router-link></li>
+      <li><router-link to="/testnets" @click="closeNav">Testnets</router-link></li>
+      <li><router-link to="/community-contributions" @click="closeNav">Community</router-link></li>
+      <li><router-link to="/technical-contributions" @click="closeNav">Technical</router-link></li>
+      <li><router-link to="/guides" @click="closeNav">Guides</router-link></li>
     </ul>
     <div class="burger" @click="toggleNav">
       <div class="line1"></div>
@@ -23,13 +23,20 @@
 <script>
 export default {
   name: 'NavBar',
+  data() {
+    return {
+      isNavActive: false,
+    };
+  },
   methods: {
     toggleNav() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('nav-active');
-    }
-  }
-}
+      this.isNavActive = !this.isNavActive;
+    },
+    closeNav() {
+      this.isNavActive = false;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -46,7 +53,7 @@ export default {
 
 .logo {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
   align-items: center;
   margin: 10px;
 }
@@ -57,10 +64,10 @@ export default {
 
 .logo p {
   color: rgba(255, 255, 255, 0.466);
-  margin: 5px 0 0 0; /* Add margin above the text */
+  margin: 5px 0 0 0;
   font-size: 16px;
   font-weight: bold;
-  text-align: center; /* Center text */
+  text-align: center;
 }
 
 .nav-links {
@@ -92,6 +99,7 @@ export default {
   display: none;
   cursor: pointer;
   flex-direction: column;
+  z-index: 1001; /* Ensure burger is on top */
 }
 
 .burger div {
@@ -104,25 +112,30 @@ export default {
 
 @media (max-width: 768px) {
   .nav-links {
-    position: absolute;
+    position: fixed;
     right: 0;
-    height: 92vh;
-    top: 8vh;
+    top: 0;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    visibility: hidden;
   }
 
   .nav-links.nav-active {
     transform: translateX(0);
+    visibility: visible;
   }
 
   .nav-links li {
     opacity: 0;
+    margin-top: 50px;
   }
 
   .nav-links.nav-active li {
@@ -132,6 +145,18 @@ export default {
 
   .burger {
     display: flex;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo p {
+    font-size: 10px;
+  }
+
+  .logo {
+    margin: 3px;
   }
 }
 </style>

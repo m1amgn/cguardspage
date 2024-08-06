@@ -1,6 +1,6 @@
 <template>
     <div class="technical-contributions">
-      <h1>Technical Contributions</h1>
+      <h2>Technical Contributions</h2>
       <div class="contributions-list">
         <a
           v-for="(contribution, index) in contributions"
@@ -51,7 +51,7 @@
   }
   
   .contributions-list {
-    max-height: 400px; /* Adjust height as needed */
+    max-height: 350px; /* Adjust height as needed */
     overflow-y: auto;
     margin-top: 20px;
     padding-right: 10px;
@@ -101,8 +101,8 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    width: 80%; /* Fixed width for better alignment */
-    max-width: 600px; /* Optional: Set a max width */
+    width: 90%; /* Fixed width for better alignment */
+    max-width: 700px; /* Optional: Set a max width */
   }
   
   .contribution:hover {
@@ -136,7 +136,7 @@
     }
     
     .contributions-list {
-      max-height: 300px;
+      max-height: 500px;
       padding: 10px;
     }
     
@@ -153,10 +153,6 @@
     .contribution-details {
       max-width: 100%;
       text-align: center;
-    }
-  
-    .contribution p {
-      font-size: 1.2em;
     }
   }
   </style>
