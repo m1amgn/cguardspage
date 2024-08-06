@@ -2,13 +2,13 @@
   <footer class="footer">
     <div class="social-icons">
       <a :href="contactLinks.mintscan" target="_blank">
-        <img src="logo-mintscan.png" alt="Mintscan">
+        <img :src="mintscanIcon" alt="Mintscan">
       </a>
       <a :href="contactLinks.github" target="_blank">
-        <img src="github-mark-white.svg" alt="GitHub">
+        <img :src="githubIcon" alt="GitHub">
       </a>
       <a :href="contactLinks.gmail" target="_blank">
-        <img src="email.png" alt="Email">
+        <img :src="emailIcon" alt="Email">
       </a>
     </div>
   </footer>
@@ -23,6 +23,17 @@ export default {
     return {
       contactLinks: {}
     };
+  },
+  computed: {
+    mintscanIcon() {
+      return `${window.location.origin}/logo-mintscan.png`;
+    },
+    githubIcon() {
+      return `${window.location.origin}/github-mark-white.svg`;
+    },
+    emailIcon() {
+      return `${window.location.origin}/email.png`;
+    }
   },
   created() {
     axios.get('/BlockchainsData.json').then(response => {

@@ -1,0 +1,286 @@
+{
+  "blockchains": [
+    {
+      "name": "Cosmos",
+      "logo": "atom.svg",
+      "address": "https://cosmos.network/",
+      "github": "https://github.com/cosmos",
+      "mintscan": "https://www.mintscan.io/cosmos",
+      "pingpub": "https://ping.pub/cosmos",
+      "documentation": "https://docs.cosmos.network/",
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Tendermint",
+          "type": "Consensus Engine",
+          "link": "https://tendermint.com/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        },
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        }
+      ]
+    },
+    {
+      "name": "Osmosis",
+      "logo": "osmo.svg",
+      "address": "osmosis1...",
+      "github": "https://github.com/osmosis-labs",
+      "mintscan": "https://www.mintscan.io/osmosis",
+      "pingpub": "https://ping.pub/osmosis",
+      "documentation": "https://docs.osmosis.zone/",
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "IBC",
+          "type": "Protocol",
+          "link": "https://ibcprotocol.org/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        },
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        }
+      ]
+    },
+    {
+      "name": "Osmosis",
+      "logo": "osmo.svg",
+      "address": "osmosis1...",
+      "github": "https://github.com/osmosis-labs",
+      "mintscan": "https://www.mintscan.io/osmosis",
+      "pingpub": "https://ping.pub/osmosis",
+      "documentation": "https://docs.osmosis.zone/",
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "IBC",
+          "type": "Protocol",
+          "link": "https://ibcprotocol.org/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        },
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        }
+      ]
+    },
+    {
+      "name": "Osmosis",
+      "logo": "osmo.svg",
+      "address": "osmosis1...",
+      "github": "https://github.com/osmosis-labs",
+      "mintscan": "https://www.mintscan.io/osmosis",
+      "pingpub": "https://ping.pub/osmosis",
+      "documentation": "https://docs.osmosis.zone/",
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "IBC",
+          "type": "Protocol",
+          "link": "https://ibcprotocol.org/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        },
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        }
+      ]
+    },
+    {
+      "name": "Osmosis",
+      "logo": "osmo.svg",
+      "address": "osmosis1...",
+      "github": "https://github.com/osmosis-labs",
+      "mintscan": "https://www.mintscan.io/osmosis",
+      "pingpub": "https://ping.pub/osmosis",
+      "documentation": "https://docs.osmosis.zone/",
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "IBC",
+          "type": "Protocol",
+          "link": "https://ibcprotocol.org/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        },
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        }
+      ]
+    },
+    {
+      "name": "Osmosis",
+      "logo": "osmo.svg",
+      "address": "osmosis1...",
+      "github": "https://github.com/osmosis-labs",
+      "mintscan": "https://www.mintscan.io/osmosis",
+      "pingpub": "https://ping.pub/osmosis",
+      "documentation": "https://docs.osmosis.zone/",
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "IBC",
+          "type": "Protocol",
+          "link": "https://ibcprotocol.org/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        },
+        {
+          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        },
+        {
+          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
+          "link": "https://link.com"
+        }
+      ]
+    }
+  ]
+}

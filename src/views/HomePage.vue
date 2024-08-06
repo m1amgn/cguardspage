@@ -2,6 +2,13 @@
     <div class="home">
         <div class="sections">
             <div class="section">
+                <h2>Validate</h2>
+                <p>Useful information for validators</p>
+                <router-link to="/validate" class="read-more">Explore</router-link>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="section">
                 <h2>Mainnets</h2>
                 <p>We ensure the security of the mainnets</p>
                 <router-link to="/mainnets" class="read-more">Explore</router-link>
@@ -14,7 +21,7 @@
         </div>
         <div class="sections">
             <div class="section">
-                <h2>Community</h2>
+                <h2>Community contributions</h2>
                 <p>Participate in the crypto community and bring massadoption closer</p>
                 <router-link to="/community-contributions" class="read-more">Explore</router-link>
             </div>
@@ -24,7 +31,6 @@
                 <router-link to="/technical-contributions" class="read-more">Explore</router-link>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -50,7 +56,6 @@ export default {
 .sections {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 .section {

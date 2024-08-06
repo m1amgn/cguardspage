@@ -5,12 +5,12 @@
       <p>Better than just a validator</p>
     </div>
     <ul :class="['nav-links', { 'nav-active': isNavActive }]">
-      <li><router-link to="/home" @click="closeNav">Home</router-link></li>
+      <li><router-link to="/" @click="closeNav">Home</router-link></li>
+      <li><router-link to="/validate" @click="closeNav">Validate</router-link></li>
       <li><router-link to="/mainnets" @click="closeNav">Mainnets</router-link></li>
       <li><router-link to="/testnets" @click="closeNav">Testnets</router-link></li>
       <li><router-link to="/community-contributions" @click="closeNav">Community</router-link></li>
       <li><router-link to="/technical-contributions" @click="closeNav">Technical</router-link></li>
-      <li><router-link to="/guides" @click="closeNav">Guides</router-link></li>
     </ul>
     <div class="burger" @click="toggleNav">
       <div class="line1"></div>
@@ -148,7 +148,7 @@ export default {
   }
 
   .logo img {
-    height: 40px;
+    height: 30px;
   }
 
   .logo p {
