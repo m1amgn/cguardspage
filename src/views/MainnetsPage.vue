@@ -130,7 +130,6 @@ export default {
   /* Break long words */
 }
 
-
 .blockchain p {
   margin: 0;
   white-space: pre-line;
@@ -138,29 +137,144 @@ export default {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .mainnets {
     padding: 10px;
   }
 
   .mainnets-list {
-    max-height: 500px;
+    max-height: 400px;
     padding: 10px;
   }
 
   .blockchain {
     width: 90%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .blockchain img {
-    margin-bottom: 10px;
+    margin: 0;
   }
 
   .blockchain-details {
     max-width: 100%;
     text-align: center;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .blockchain-details h3 {
+    font-size: 0.8em;
+  }
+
+  .blockchain-details p {
+    font-size: 0.7em;
+  }
+
+  .blockchain img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .mainnets {
+    padding: 10px;
+  }
+
+  .mainnets-list {
+    max-height: 350px;
+  }
+
+  .blockchain-link {
+    width: 90%;
+    margin: 5px;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .blockchain-details h3 {
+    font-size: 1.125em;
+  }
+
+  .blockchain-details p {
+    font-size: 1em;
+  }
+
+  .blockchain img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .mainnets {
+    padding: 10x;
+  }
+
+  .blockchain-link {
+    width: 95%;
+    margin: 5px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .blockchain-details h3 {
+    font-size: 1.25em;
+  }
+
+  .blockchain-details p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainnets {
+    padding: 30px;
+  }
+
+  .mainnets-list {
+    max-height: 400px;
+  }
+
+  .blockchain-link {
+    width: 95%;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .blockchain-details h3 {
+    font-size: 1.25em;
+  }
+
+  .blockchain-details p {
+    font-size: 1em;
   }
 }
 </style>

@@ -45,27 +45,27 @@ export default {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  width: 100%;
+  width: 98%;
   position: fixed;
   top: 0;
   z-index: 1000;
+  padding: 10px;
 }
 
 .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
 }
 
 .logo img {
-  height: 60px;
+  height: 40px;
 }
 
 .logo p {
   color: rgba(255, 255, 255, 0.466);
   margin: 5px 0 0 0;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   text-align: center;
 }
@@ -74,18 +74,17 @@ export default {
   list-style: none;
   display: flex;
   margin: 0;
-  margin-right: 20px;
 }
 
 .nav-links li {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .nav-links li a {
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 8px 10px;
+  font-size: 14px;
   font-weight: bold;
   transition: background-color 0.3s;
 }
@@ -99,7 +98,8 @@ export default {
   display: none;
   cursor: pointer;
   flex-direction: column;
-  z-index: 1001; /* Ensure burger is on top */
+  z-index: 1001;
+  /* Ensure burger is on top */
 }
 
 .burger div {
@@ -110,7 +110,7 @@ export default {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .nav-links {
     position: fixed;
     right: 0;
@@ -157,6 +157,83 @@ export default {
 
   .logo {
     margin: 3px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .nav-links li a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  .nav-links li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .logo p {
+    font-size: 16px;
+  }
+
+  .nav-links li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    padding: 10px 12px;
   }
 }
 </style>

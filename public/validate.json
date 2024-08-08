@@ -1,13 +1,18 @@
 {
   "blockchains": [
     {
-      "name": "Cosmos",
+      "name": "CosmosHub",
+      "cryptocurrency": "ATOM",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?include_24hr_change=true&vs_currencies=usd,%20cny&ids=cosmos",
       "logo": "atom.svg",
       "address": "https://cosmos.network/",
       "github": "https://github.com/cosmos",
       "mintscan": "https://www.mintscan.io/cosmos",
       "pingpub": "https://ping.pub/cosmos",
       "documentation": "https://docs.cosmos.network/",
+      "api_validators": "https://rest.cosmos.directory/cosmoshub/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=100",
+      "current_amount_of_validators": 180,
+      "max_validators": 180,
       "requirements": {
         "cpu": "4 cores",
         "ram": "8GB",
@@ -22,39 +27,43 @@
       ],
       "technical_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Development of the Tendermint consensus engine, which underpins the Cosmos network and many other blockchain projects."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Implementation of the Cosmos SDK, a modular framework for building interoperable blockchain applications."
         }
       ],
       "community_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Organizing events and hackathons to promote blockchain education and development within the community."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Providing extensive documentation and support for developers building on the Cosmos network."
         }
       ],
       "installation_tutorials": [
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Setting up a Cosmos validator node",
+          "link": "https://docs.cosmos.network/master/run-node/validator.html"
         },
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Upgrading Cosmos validator nodes",
+          "link": "https://docs.cosmos.network/master/run-node/upgrades.html"
         }
       ]
     },
     {
       "name": "Osmosis",
+      "cryptocurrency": "OSMO",
       "logo": "osmo.svg",
-      "address": "osmosis1...",
+      "address": "https://osmosis.zone/",
       "github": "https://github.com/osmosis-labs",
       "mintscan": "https://www.mintscan.io/osmosis",
       "pingpub": "https://ping.pub/osmosis",
       "documentation": "https://docs.osmosis.zone/",
+      "api_validators": "https://osmosis-api.polkachu.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=100",
+      "current_amount_of_validators": 75,
+      "max_validators": 150,
       "requirements": {
         "cpu": "4 cores",
         "ram": "8GB",
@@ -69,39 +78,42 @@
       ],
       "technical_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Development of a decentralized exchange (DEX) platform that enables seamless swapping of assets within the Cosmos ecosystem."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Implementation of innovative liquidity pools and yield farming mechanisms."
         }
       ],
       "community_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Organizing community incentives and rewards for active participants in the Osmosis ecosystem."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Providing educational resources and support for users engaging with the Osmosis DEX."
         }
       ],
       "installation_tutorials": [
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Setting up an Osmosis validator node",
+          "link": "https://docs.osmosis.zone/validators/overview.html"
         },
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Upgrading Osmosis validator nodes",
+          "link": "https://docs.osmosis.zone/validators/upgrades.html"
         }
       ]
     },
     {
-      "name": "Osmosis",
-      "logo": "osmo.svg",
-      "address": "osmosis1...",
-      "github": "https://github.com/osmosis-labs",
-      "mintscan": "https://www.mintscan.io/osmosis",
-      "pingpub": "https://ping.pub/osmosis",
-      "documentation": "https://docs.osmosis.zone/",
+      "name": "Dymension",
+      "cryptocurrency": "DYM",
+      "logo": "dymension.png",
+      "address": "https://dymension.xyz/",
+      "github": "https://github.com/dimension",
+      "mintscan": "https://www.mintscan.io/dymension",
+      "pingpub": "https://ping.pub/dymension",
+      "documentation": "https://github.com/dymensionxyz",
+      "api_validators": "https://dymension.api.kjnodes.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=100",
+      "max_validators": 125,
       "requirements": {
         "cpu": "4 cores",
         "ram": "8GB",
@@ -109,46 +121,50 @@
       },
       "ecosystem": [
         {
-          "name": "IBC",
-          "type": "Protocol",
-          "link": "https://ibcprotocol.org/"
+          "name": "Dimension",
+          "type": "Layer-1",
+          "link": "https://dimension.network/"
         }
       ],
       "technical_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Developing a high-performance Layer-1 blockchain platform for decentralized applications."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Implementing advanced consensus algorithms for enhanced security and scalability."
         }
       ],
       "community_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Engaging with the community through regular updates and development progress reports."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Providing educational content and tutorials for new users and developers."
         }
       ],
       "installation_tutorials": [
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Setting up a Dimension validator node",
+          "link": "https://docs.dimension.network/validator-setup.html"
         },
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Upgrading Dimension validator nodes",
+          "link": "https://docs.dimension.network/validator-upgrades.html"
         }
       ]
     },
     {
-      "name": "Osmosis",
-      "logo": "osmo.svg",
-      "address": "osmosis1...",
-      "github": "https://github.com/osmosis-labs",
-      "mintscan": "https://www.mintscan.io/osmosis",
-      "pingpub": "https://ping.pub/osmosis",
-      "documentation": "https://docs.osmosis.zone/",
+      "name": "Celestia",
+      "cryptocurrency": "TIA",
+      "logo": "celestia.png",
+      "address": "https://celestia.org/",
+      "github": "https://github.com/celestiaorg",
+      "mintscan": "https://www.mintscan.io/celestia/",
+      "pingpub": "https://ping.pub/celestia",
+      "documentation": "https://docs.celestia.org/",
+      "api_validators": "https://api.lunaroasis.net/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 100,
+      "max_validators": 100,
       "requirements": {
         "cpu": "4 cores",
         "ram": "8GB",
@@ -156,46 +172,50 @@
       },
       "ecosystem": [
         {
-          "name": "IBC",
-          "type": "Protocol",
-          "link": "https://ibcprotocol.org/"
+          "name": "Celestia",
+          "type": "Data Availability",
+          "link": "https://celestia.org/"
         }
       ],
       "technical_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Creating a modular blockchain network focused on scalable data availability."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Implementing innovative data availability proofs for decentralized applications."
         }
       ],
       "community_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Facilitating community-driven research and development in blockchain scalability solutions."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Organizing hackathons and grant programs to support innovative projects within the Celestia ecosystem."
         }
       ],
       "installation_tutorials": [
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Setting up a Celestia validator node",
+          "link": "https://docs.celestia.org/validator-setup.html"
         },
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Upgrading Celestia validator nodes",
+          "link": "https://docs.celestia.org/validator-upgrades.html"
         }
       ]
     },
     {
-      "name": "Osmosis",
-      "logo": "osmo.svg",
-      "address": "osmosis1...",
-      "github": "https://github.com/osmosis-labs",
-      "mintscan": "https://www.mintscan.io/osmosis",
-      "pingpub": "https://ping.pub/osmosis",
-      "documentation": "https://docs.osmosis.zone/",
+      "name": "Secret Network",
+      "cryptocurrency": "SCRT",
+      "logo": "secret.png",
+      "address": "https://scrt.network/",
+      "github": "https://github.com/scrtlabs",
+      "mintscan": "https://www.mintscan.io/secret",
+      "pingpub": "https://ping.pub/secret",
+      "documentation": "https://docs.scrt.network/secret-network-documentation",
+      "api_validators": "https://lcd.mainnet.secretsaturn.net/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 72,
+      "max_validators": 80,
       "requirements": {
         "cpu": "4 cores",
         "ram": "8GB",
@@ -203,46 +223,101 @@
       },
       "ecosystem": [
         {
-          "name": "IBC",
-          "type": "Protocol",
-          "link": "https://ibcprotocol.org/"
+          "name": "Secret Contracts",
+          "type": "Privacy-preserving smart contracts",
+          "link": "https://scrt.network/technology"
         }
       ],
       "technical_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Development of privacy-preserving smart contracts that ensure data privacy on blockchain."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Implementation of secret contracts that protect sensitive user information."
         }
       ],
       "community_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Hosting workshops and webinars to educate developers about privacy solutions."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Engaging with the community through regular updates and development news."
         }
       ],
       "installation_tutorials": [
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Setting up a Secret Network validator node",
+          "link": "https://docs.scrt.network/validators/overview.html"
         },
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Upgrading Secret Network validator nodes",
+          "link": "https://docs.scrt.network/validators/upgrades.html"
         }
       ]
     },
     {
-      "name": "Osmosis",
-      "logo": "osmo.svg",
-      "address": "osmosis1...",
-      "github": "https://github.com/osmosis-labs",
-      "mintscan": "https://www.mintscan.io/osmosis",
-      "pingpub": "https://ping.pub/osmosis",
-      "documentation": "https://docs.osmosis.zone/",
+      "name": "Bitcanna",
+      "cryptocurrency": "BCNA",
+      "logo": "bitcanna.svg",
+      "address": "https://bitcanna.io/",
+      "github": "https://github.com/BitCannaGlobal",
+      "mintscan": "",
+      "pingpub": "https://ping.pub/bitcanna",
+      "documentation": "https://docs.bitcanna.io/",
+      "api_validators": "https://bitcanna-rest.publicnode.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 92,
+      "max_validators": 100,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "200GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Bitcanna",
+          "type": "Supply chain",
+          "link": "https://bitcanna.io/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Providing a blockchain solution for the cannabis industry supply chain management."
+        },
+        {
+          "contribution": "Implementation of secure and transparent transactions for cannabis products."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Offering educational resources about the cannabis industry and blockchain technology."
+        },
+        {
+          "contribution": "Engaging with the community through events and social media."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Bitcanna validator node",
+          "link": "https://docs.bitcanna.io/validators/setup.html"
+        },
+        {
+          "tutorial": "Upgrading Bitcanna validator nodes",
+          "link": "https://docs.bitcanna.io/validators/upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Evmos",
+      "cryptocurrency": "EVMOS",
+      "logo": "evmos.png",
+      "address": "https://evmos.org/",
+      "github": "https://github.com/tharsis/evmos",
+      "mintscan": "https://www.mintscan.io/evmos",
+      "pingpub": "https://ping.pub/evmos",
+      "documentation": "https://docs.evmos.org/",
+      "api_validators": "https://evmos-rest.publicnode.com/cosmos/base/tendermint/v1beta1/validatorsets/22626839?pagination.limit=100&pagination.offset=100",
+      "current_amount_of_validators": 121,
+      "max_validators": 150,
       "requirements": {
         "cpu": "4 cores",
         "ram": "8GB",
@@ -250,35 +325,919 @@
       },
       "ecosystem": [
         {
-          "name": "IBC",
-          "type": "Protocol",
-          "link": "https://ibcprotocol.org/"
+          "name": "Evmos",
+          "type": "EVM-compatible",
+          "link": "https://evmos.org/"
         }
       ],
       "technical_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Bridging Ethereum and Cosmos ecosystems by providing EVM compatibility."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Implementing innovative interoperability solutions for cross-chain applications."
         }
       ],
       "community_contributions": [
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Hosting community calls and events to foster developer collaboration."
         },
         {
-          "contribution": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text..."
+          "contribution": "Providing grants and incentives for developers building on Evmos."
         }
       ],
       "installation_tutorials": [
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Setting up an Evmos validator node",
+          "link": "https://docs.evmos.org/validators/overview.html"
         },
         {
-          "tutorial": "Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...Technical contributions text...",
-          "link": "https://link.com"
+          "tutorial": "Upgrading Evmos validator nodes",
+          "link": "https://docs.evmos.org/validators/upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Akash",
+      "cryptocurrency": "AKT",
+      "logo": "akash-network.png",
+      "address": "https://akash.network/",
+      "github": "https://github.com/ovrclk",
+      "mintscan": "https://www.mintscan.io/akash",
+      "pingpub": "https://ping.pub/akash",
+      "documentation": "https://docs.akash.network/",
+      "api_validators": "https://akash.c29r3.xyz/api/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 100,
+      "max_validators": 100,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Supercloud",
+          "type": "Decentralized Cloud",
+          "link": "https://akash.network/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of a decentralized cloud computing platform that leverages unused compute capacity in data centers and edge devices."
+        },
+        {
+          "contribution": "Implementation of secure and scalable infrastructure for running containerized applications."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Hosting educational webinars and workshops to onboard new developers and users."
+        },
+        {
+          "contribution": "Providing grants and incentives to encourage community participation and development."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up an Akash validator node",
+          "link": "https://docs.akash.network/guides/validator/setup"
+        },
+        {
+          "tutorial": "Upgrading Akash validator nodes",
+          "link": "https://docs.akash.network/guides/validator/upgrades"
+        }
+      ]
+    },
+    {
+      "name": "Agoric",
+      "cryptocurrency": "BLD",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?ids=agoric&vs_currencies=usd&include_24hr_change=true",
+      "logo": "agoric.png",
+      "address": "https://agoric.com/",
+      "github": "https://github.com/Agoric",
+      "mintscan": "https://www.mintscan.io/agoric",
+      "pingpub": "https://ping.pub/agoric",
+      "documentation": "https://docs.agoric.com/",
+      "api_validators": "https://agoric.api.kjnodes.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 97,
+      "max_validators": 100,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Chainlink",
+          "type": "Oracle",
+          "link": "https://chain.link/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of JavaScript smart contracts that are secure and easy to create."
+        },
+        {
+          "contribution": "Integration with Chainlink to provide reliable and accurate data for smart contracts."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Organizing community calls and events to engage with developers and gather feedback."
+        },
+        {
+          "contribution": "Providing educational resources and support for developers building on the Agoric platform."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up an Agoric validator node",
+          "link": "https://docs.agoric.com/getting-started/validator.html"
+        },
+        {
+          "tutorial": "Upgrading Agoric validator nodes",
+          "link": "https://docs.agoric.com/getting-started/upgrading.html"
+        }
+      ]
+    },
+    {
+      "name": "Axelar",
+      "cryptocurrency": "AXL",
+      "logo": "axelar.svg",
+      "address": "https://www.axelar.network/",
+      "github": "https://github.com/axelarnetwork",
+      "mintscan": "https://www.mintscan.io/axelar",
+      "pingpub": "https://ping.pub/axelar",
+      "documentation": "https://docs.axelar.network/",
+      "api_validators": "https://api-1.axelar.nodes.guru/cosmos/base/tendermint/v1beta1/validatorsets/13901194?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 75,
+      "max_validators": 75,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Axelar",
+          "type": "Interoperability",
+          "link": "https://axelar.network/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Providing cross-chain communication protocols to facilitate interoperability between different blockchain networks."
+        },
+        {
+          "contribution": "Developing secure and scalable solutions for cross-chain asset transfers."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Hosting community calls and discussions to gather feedback and improve the Axelar network."
+        },
+        {
+          "contribution": "Offering grants and incentives for developers building cross-chain applications."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up an Axelar validator node",
+          "link": "https://docs.axelar.network/validator-setup.html"
+        },
+        {
+          "tutorial": "Upgrading Axelar validator nodes",
+          "link": "https://docs.axelar.network/validator-upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Archway",
+      "cryptocurrency": "ARCH",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?include_24hr_change=true&vs_currencies=usd&ids=archway",
+      "logo": "archway.png",
+      "address": "https://archway.io/",
+      "github": "https://github.com/archway-network",
+      "mintscan": "https://www.mintscan.io/archway",
+      "pingpub": "https://ping.pub/archway",
+      "documentation": "https://docs.archway.io/",
+      "api_validators": "https://archway.api.trivium.network:1317/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 100,
+      "max_validators": 100,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Inter-Blockchain Communication (IBC)",
+          "type": "Protocol",
+          "link": "https://cosmos.network/ibc"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Developing a reward system that includes network fees, inflation, and contract premiums to support continuous development."
+        },
+        {
+          "contribution": "Implementing gasless transactions and governance incentives to enhance the user and developer experience."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Organizing governance voting and community engagement to improve decentralized decision-making."
+        },
+        {
+          "contribution": "Supporting core development teams financially through allocated token earnings."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up an Archway validator node",
+          "link": "https://docs.archway.io/validator-setup.html"
+        },
+        {
+          "tutorial": "Upgrading Archway validator nodes",
+          "link": "https://docs.archway.io/validator-upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Nibiru",
+      "cryptocurrency": "NIBI",
+      "logo": "nibiru.svg",
+      "address": "https://nibiru.fi/",
+      "github": "https://github.com/NibiruChain",
+      "mintscan": "",
+      "pingpub": "https://ping.pub/nibiru",
+      "documentation": "https://docs.nibiru.fi/",
+      "api_validators": "https://nibiru.api.staking-explorer.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 89,
+      "max_validators": 150,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Nibiru",
+          "type": "Smart Contracts",
+          "link": "https://nibiru.fi/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of the Nibiru blockchain providing high throughput and strong security for smart contracts."
+        },
+        {
+          "contribution": "Creation of NibiSwap, an automated market maker protocol for multichain assets."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Engaging the community through regular updates, events, and incentives."
+        },
+        {
+          "contribution": "Providing extensive educational resources and support for developers and users."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Nibiru validator node",
+          "link": "https://docs.nibiru.fi/validators/setup"
+        },
+        {
+          "tutorial": "Upgrading Nibiru validator nodes",
+          "link": "https://docs.nibiru.fi/validators/upgrades"
+        }
+      ]
+    },
+    {
+      "name": "XPLA",
+      "cryptocurrency": "XPLA",
+      "logo": "xpla.png",
+      "address": "https://www.xpla.io/",
+      "github": "https://github.com/xpladev",
+      "mintscan": "https://www.mintscan.io/xpla",
+      "pingpub": "https://ping.pub/xpla",
+      "documentation": "https://docs.xpla.io/learn/learn/about-xpla-chain/",
+      "api_validators": "",
+      "current_amount_of_validators": 67,
+      "max_validators": 80,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "XPLA Ecosystem",
+          "type": "Blockchain Platform",
+          "link": "https://xpla.io/ecosystem"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of a versatile blockchain platform supporting various decentralized applications."
+        },
+        {
+          "contribution": "Implementation of advanced security and scalability features for the network."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Engaging with the community through regular updates and educational content."
+        },
+        {
+          "contribution": "Hosting hackathons and providing grants for innovative projects within the XPLA ecosystem."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up an XPLA validator node",
+          "link": "https://docs.xpla.io/full-node/full-node/run-a-full-node/overview/"
+        },
+        {
+          "tutorial": "Upgrading XPLA validator nodes",
+          "link": "https://docs.xpla.io/full-node/full-node/run-a-full-node/updates-and-additional-settings/"
+        }
+      ]
+    },
+    {
+      "name": "Fetch.ai",
+      "cryptocurrency": "FET",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?ids=fetch-ai&vs_currencies=usd,eur&include_24hr_change=true",
+      "logo": "fetchhub.png",
+      "address": "https://fetch.ai/",
+      "github": "https://github.com/fetchai",
+      "mintscan": "https://www.mintscan.io/fetchai",
+      "pingpub": "https://ping.pub/fetchhub",
+      "documentation": "https://fetch.ai/docs",
+      "api_validators": "https://rest-fetchhub.fetch.ai/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 70,
+      "max_validators": 70,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Collective Learning",
+          "type": "Machine Learning",
+          "link": "https://fetch.ai/collective-learning"
+        },
+        {
+          "name": "Mobility",
+          "type": "Transport Solutions",
+          "link": "https://fetch.ai/mobility"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of the Fetch.ai blockchain with Cosmos SDK for scalability and interoperability."
+        },
+        {
+          "contribution": "Implementation of decentralized digital twins for automation in various industries."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Organizing community events and hackathons to foster innovation and collaboration."
+        },
+        {
+          "contribution": "Providing educational resources and support for developers building on the Fetch.ai network."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Fetch.ai validator node",
+          "link": "https://docs.fetch.ai/setting-up-a-validator"
+        },
+        {
+          "tutorial": "Upgrading Fetch.ai validator nodes",
+          "link": "https://docs.fetch.ai/upgrading-a-validator"
+        }
+      ]
+    },
+    {
+      "name": "Nolus",
+      "cryptocurrency": "NLS",
+      "logo": "nolus.svg",
+      "address": "https://nolus.io/",
+      "github": "https://github.com/nolus-protocol",
+      "mintscan": "",
+      "pingpub": "https://ping.pub/nolus",
+      "documentation": "https://hub.nolus.io/en/collections/10034429-nolus-documentation",
+      "api_validators": "https://pirin-cl.nolus.network:1317/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 50,
+      "max_validators": 50,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "DeFi Lease",
+          "type": "DeFi Protocol",
+          "link": "https://nolusprotocol.io/defi-lease"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of the DeFi Lease protocol, providing up to 150% financing on the initial investment."
+        },
+        {
+          "contribution": "Implementation of Proof of Participation (PoP) consensus mechanism."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Hosting community calls and providing educational resources for developers and users."
+        },
+        {
+          "contribution": "Offering grants and incentives for developers building on the Nolus protocol."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Nolus validator node",
+          "link": "https://docs.nolusprotocol.io/validators/setup"
+        },
+        {
+          "tutorial": "Upgrading Nolus validator nodes",
+          "link": "https://docs.nolusprotocol.io/validators/upgrades"
+        }
+      ]
+    },
+    {
+      "name": "Aura Network",
+      "cryptocurrency": "AURA",
+      "logo": "aura.png",
+      "address": "https://aura.network/",
+      "github": "https://github.com/aura-nw",
+      "mintscan": "",
+      "pingpub": "https://ping.pub/aura",
+      "documentation": "https://docs.aura.network/",
+      "api_validators": "https://lcd.aura.network/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 68,
+      "max_validators": 70,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Aurascan",
+          "type": "Explorer",
+          "link": "https://aurascan.io/"
+        },
+        {
+          "name": "Pyxis Safe",
+          "type": "Multi-signature Tool",
+          "link": "https://docs.aura.network/pyxis-safe"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of Aura Network, a Layer-1 blockchain designed to accelerate NFT adoption."
+        },
+        {
+          "contribution": "Creation of Pyxis Safe, a multi-signature tool for Cosmos-based chains."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Organizing educational events and providing extensive documentation for developers."
+        },
+        {
+          "contribution": "Engaging with the community through updates and interactive platforms."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up an Aura Network validator node",
+          "link": "https://docs.aura.network/validator-handbook"
+        },
+        {
+          "tutorial": "Upgrading Aura Network validator nodes",
+          "link": "https://docs.aura.network/upgrades"
+        }
+      ]
+    },
+    {
+      "name": "Noble",
+      "cryptocurrency": "USDC",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd",
+      "logo": "noble.jpeg",
+      "address": "https://nobleassets.xyz/",
+      "github": "https://github.com/noble-assets/noble",
+      "mintscan": "https://www.mintscan.io/noble",
+      "pingpub": "https://ping.pub/noble",
+      "documentation": "https://docs.noble.xyz/",
+      "api_validators": "",
+      "current_amount_of_validators": 20,
+      "max_validators": 100,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Cosmos",
+          "type": "Interoperability",
+          "link": "https://cosmos.network/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of the native asset issuance chain for USDC in the Cosmos ecosystem."
+        },
+        {
+          "contribution": "Facilitating cross-chain transfers and transactions using IBC protocol."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Providing reliable and secure stablecoin (USDC) for transactions in the Cosmos ecosystem."
+        },
+        {
+          "contribution": "Enabling new financial use cases such as remittances and 24/7 trading."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Noble validator node",
+          "link": "https://docs.nobleassets.xyz/validator-setup.html"
+        },
+        {
+          "tutorial": "Upgrading Noble validator nodes",
+          "link": "https://docs.nobleassets.xyz/validator-upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Quasar",
+      "cryptocurrency": "QSR",
+      "logo": "quasar.png",
+      "address": "https://quasar.fi/",
+      "github": "https://github.com/quasar-finance",
+      "mintscan": "https://www.mintscan.io/quasar",
+      "pingpub": "https://ping.pub/quasar",
+      "documentation": "https://docs.quasar.fi/",
+      "api_validators": "https://quasar-api.polkachu.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 50,
+      "max_validators": 50,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Quasar",
+          "type": "DeFi",
+          "link": "https://quasar.fi/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of a decentralized asset management protocol that enables interchain functionality."
+        },
+        {
+          "contribution": "Implementation of secure smart contract vaults for automated investment strategies across the Cosmos ecosystem."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Engaging the community through educational initiatives and collaborative projects."
+        },
+        {
+          "contribution": "Offering rewards and incentives to active participants and contributors within the Quasar ecosystem."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Quasar validator node",
+          "link": "https://docs.quasar.dev/validator-setup"
+        },
+        {
+          "tutorial": "Upgrading Quasar validator nodes",
+          "link": "https://docs.quasar.dev/validator-upgrades"
+        }
+      ]
+    },
+    {
+      "name": "Stargaze",
+      "cryptocurrency": "STARS",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?include_24hr_change=true&vs_currencies=usd,cny&ids=stargaze",
+      "logo": "stargaze.svg",
+      "address": "https://www.stargaze.zone/",
+      "github": "https://github.com/public-awesome",
+      "mintscan": "https://www.mintscan.io/stargaze",
+      "pingpub": "https://ping.pub/stargaze",
+      "documentation": "https://docs.stargaze.zone/",
+      "api_validators": "https://stargaze-api.polkachu.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=100",
+      "current_amount_of_validators": 130,
+      "max_validators": 130,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Stargaze",
+          "type": "NFT Platform",
+          "link": "https://www.stargaze.zone/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Developing a decentralized NFT platform built on Cosmos SDK."
+        },
+        {
+          "contribution": "Implementation of innovative NFT features and tools for creators."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Hosting community events and incentives to drive platform adoption."
+        },
+        {
+          "contribution": "Providing educational resources and support for new users and developers."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Stargaze validator node",
+          "link": "https://docs.stargaze.zone/guides/validators/overview.html"
+        },
+        {
+          "tutorial": "Upgrading Stargaze validator nodes",
+          "link": "https://docs.stargaze.zone/guides/validators/upgrading.html"
+        }
+      ]
+    },
+    {
+      "name": "Umee (UX Chain)",
+      "cryptocurrency": "UMEE",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?ids=umee&vs_currencies=usd",
+      "logo": "umee.png",
+      "address": "https://www.ux.xyz/",
+      "github": "https://github.com/umee-network",
+      "mintscan": "https://www.mintscan.io/umee",
+      "pingpub": "https://ping.pub/umee",
+      "documentation": "https://learning.ux.xyz/",
+      "api_validators": "https://umee.api.kjnodes.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 75,
+      "max_validators": 100,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Umee",
+          "type": "DeFi Lending and Borrowing",
+          "link": "https://app.ux.xyz/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of a decentralized lending and borrowing platform that supports cross-chain transactions using the Cosmos IBC protocol."
+        },
+        {
+          "contribution": "Integration with Ethereum and the Cosmos ecosystem to enable seamless cross-chain DeFi operations."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Hosting community calls and providing updates on development progress to keep users informed."
+        },
+        {
+          "contribution": "Organizing events and incentives to engage the community and promote participation."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Umee validator node",
+          "link": "https://docs.umee.cc/validator-setup.html"
+        },
+        {
+          "tutorial": "Upgrading Umee validator nodes",
+          "link": "https://docs.umee.cc/validator-upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Gravity Bridge",
+      "cryptocurrency": "GRAV",
+      "logo": "gravity-bridge.png",
+      "address": "https://www.gravitybridge.net/",
+      "github": "https://github.com/Gravity-Bridge",
+      "mintscan": "https://www.mintscan.io/gravity-bridge",
+      "pingpub": "https://ping.pub/gravity-bridge",
+      "documentation": "https://github.com/Gravity-Bridge/Gravity-Docs",
+      "api_validators": "",
+      "current_amount_of_validators": 91,
+      "max_validators": 200,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "125GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Gravity Bridge",
+          "type": "Bridge",
+          "link": "https://bridge.blockscape.network/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Developing a secure and efficient bridge between Ethereum and Cosmos SDK-based blockchains."
+        },
+        {
+          "contribution": "Optimizing the Gravity Ethereum contract to reduce costs of Cosmos → Ethereum transfers."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Establishing Gravity Groups to engage the community and promote development."
+        },
+        {
+          "contribution": "Providing grants for projects that support Gravity Bridge and the Cosmos ecosystem."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Gravity Bridge validator node",
+          "link": "https://docs.gravitybridge.net/validators/overview.html"
+        },
+        {
+          "tutorial": "Upgrading Gravity Bridge validator nodes",
+          "link": "https://docs.gravitybridge.net/validators/upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Comdex",
+      "cryptocurrency": "CMDX",
+      "logo": "comdex.png",
+      "address": "https://comdex.one/",
+      "github": "https://github.com/comdex-official",
+      "mintscan": "https://www.mintscan.io/comdex",
+      "pingpub": "https://ping.pub/comdex",
+      "documentation": "https://docs.comdex.one/",
+      "api_validators": "https://comdex-api.polkachu.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 71,
+      "max_validators": 90,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "Comdex",
+          "type": "DeFi",
+          "link": "https://comdex.one/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of decentralized finance (DeFi) applications on the Comdex blockchain."
+        },
+        {
+          "contribution": "Implementation of asset tokenization and synthetic assets trading on the blockchain."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Hosting community events and educational webinars to promote blockchain and DeFi adoption."
+        },
+        {
+          "contribution": "Providing grants and support for projects building on the Comdex platform."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Comdex validator node",
+          "link": "https://docs.comdex.one/validators/overview.html"
+        },
+        {
+          "tutorial": "Upgrading Comdex validator nodes",
+          "link": "https://docs.comdex.one/validators/upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Omniflix",
+      "cryptocurrency": "FLIX",
+      "logo": "omniflix.png",
+      "address": "https://omniflix.network/",
+      "github": "https://github.com/OmniFlix/omniflixhub",
+      "mintscan": "https://www.mintscan.io/omniflix",
+      "pingpub": "https://ping.pub/omniflixhub",
+      "documentation": "https://docs.omniflix.network/",
+      "api_validators": "https://omniflix-api.dakshavalidator.in/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=0",
+      "current_amount_of_validators": 75,
+      "max_validators": 75,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "16GB",
+        "ssd": "1TB"
+      },
+      "ecosystem": [
+        {
+          "name": "Omniflix",
+          "type": "NFT Media",
+          "link": "https://omniflix.network/"
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of the Omniflix Hub, enabling NFT minting, management, distribution, and monetization."
+        },
+        {
+          "contribution": "Implementation of decentralized media operations through NFTs."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Organizing community events and initiatives to promote NFT adoption."
+        },
+        {
+          "contribution": "Providing extensive documentation and support for developers and users in the NFT ecosystem."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up an Omniflix validator node",
+          "link": "https://docs.omniflix.network/validator-setup.html"
+        },
+        {
+          "tutorial": "Upgrading Omniflix validator nodes",
+          "link": "https://docs.omniflix.network/validator-upgrades.html"
+        }
+      ]
+    },
+    {
+      "name": "Juno",
+      "cryptocurrency": "JUNO",
+      "price_api": "https://api.coingecko.com/api/v3/simple/price?include_24hr_change=true&vs_currencies=usd,cny&ids=juno-network",
+      "logo": "juno.png",
+      "address": "https://www.junonetwork.io/",
+      "github": "https://github.com/CosmosContracts",
+      "mintscan": "https://www.mintscan.io/juno",
+      "pingpub": "https://ping.pub/juno",
+      "documentation": "https://docs.junonetwork.io/",
+      "api_validators": "https://juno-api.polkachu.com/cosmos/base/tendermint/v1beta1/validatorsets/latest?pagination.limit=100&pagination.offset=100",
+      "current_amount_of_validators": 141,
+      "max_validators": 150,
+      "requirements": {
+        "cpu": "4 cores",
+        "ram": "8GB",
+        "ssd": "500GB"
+      },
+      "ecosystem": [
+        {
+          "name": "CosmWasm?",
+          "type": "",
+          "link": ""
+        }
+      ],
+      "technical_contributions": [
+        {
+          "contribution": "Development of interoperable smart contracts using CosmWasm."
+        },
+        {
+          "contribution": "Providing a permissionless platform for deploying smart contracts."
+        }
+      ],
+      "community_contributions": [
+        {
+          "contribution": "Organizing community events and hackathons to foster innovation in the Juno ecosystem."
+        },
+        {
+          "contribution": "Providing grants and support for projects building on Juno."
+        }
+      ],
+      "installation_tutorials": [
+        {
+          "tutorial": "Setting up a Juno validator node",
+          "link": "https://docs.junonetwork.io/validators/validator-setup.html"
+        },
+        {
+          "tutorial": "Upgrading Juno validator nodes",
+          "link": "https://docs.junonetwork.io/validators/upgrades.html"
         }
       ]
     }

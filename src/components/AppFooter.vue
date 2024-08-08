@@ -4,6 +4,9 @@
       <a :href="contactLinks.mintscan" target="_blank">
         <img :src="mintscanIcon" alt="Mintscan">
       </a>
+      <a :href="contactLinks.pingpub" target="_blank">
+        <img :src="pingpubIcon" alt="Pingpub">
+      </a>
       <a :href="contactLinks.github" target="_blank">
         <img :src="githubIcon" alt="GitHub">
       </a>
@@ -27,6 +30,9 @@ export default {
   computed: {
     mintscanIcon() {
       return `${window.location.origin}/logo-mintscan.png`;
+    },
+    pingpubIcon() {
+      return `${window.location.origin}/pingpub.svg`;
     },
     githubIcon() {
       return `${window.location.origin}/github-mark-white.svg`;
@@ -61,11 +67,8 @@ export default {
 }
 
 .social-icons img {
-  width: 36px;
-  height: 36px;
-  margin: 0 10px;
   transition: transform 0.3s;
-  margin: 10px 100px;
+  margin: 10px 20px;
 }
 
 .social-icons img:hover {
@@ -73,16 +76,51 @@ export default {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .footer {
-    padding: 20px;
+    padding: 10px;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer {
+    padding: 15px;
   }
 
   .social-icons img {
     width: 28px;
     height: 28px;
-    margin: 0 50px;
-    transition: transform 0.3s;
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 25px;
+  }
+
+  .social-icons img {
+    width: 36px;
+    height: 36px;
+    margin: 0 25px;
   }
 }
 </style>

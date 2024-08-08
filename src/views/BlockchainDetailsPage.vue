@@ -4,6 +4,10 @@
       <h2>{{ blockchain.name }}</h2>
     </div>
     <div class="details-section">
+      <h3>Cryptocurrency</h3>
+      <p>{{ blockchain.cryptocurrency }}</p>
+    </div>
+    <div class="details-section">
       <h3>Website</h3>
       <p><a :href="blockchain.address" target="_blank">{{ blockchain.address }}</a></p>
     </div>
@@ -39,6 +43,16 @@
         </li>
       </ul>
     </div>
+    <div v-if="quantityOfValidators && minimumTokensToBeActive" class="details-section">
+      <h3>Validators information</h3>
+      <p><strong>Quantity of validators:</strong> {{ quantityOfValidators }}</p>
+      <p><strong>Minimum tokens in active set:</strong> {{ minimumTokensToBeActive }}</p>
+    </div>
+    <div v-else-if="blockchain.current_amount_of_validators" class="details-section">
+      <h3>Validator Information</h3>
+      <p><strong>Quantity of validators:</strong> {{ blockchain.current_amount_of_validators }} / {{
+        blockchain.max_validators }}</p>
+    </div>
     <div class="details-section">
       <h3>System requirements for nodes</h3>
       <ul>
@@ -66,7 +80,9 @@ export default {
   name: 'BlockchainDetailsPage',
   data() {
     return {
-      blockchain: null
+      blockchain: null,
+      quantityOfValidators: null,
+      minimumTokensToBeActive: null
     };
   },
   created() {
@@ -74,7 +90,27 @@ export default {
     axios.get('/validate.json')
       .then(response => {
         this.blockchain = response.data.blockchains.find(bc => bc.name === blockchainName);
-        console.log(this.blockchain.installation_tutorials)
+        if (this.blockchain && this.blockchain.api_validators) {
+          return axios.get(this.blockchain.api_validators);
+        }
+      })
+      .then(response => {
+        if (response && response.data.validators) {
+          const validators = response.data.validators;
+          const votingPower = Number(validators[validators.length - 1]?.voting_power) + 2;
+          let total = response.data.pagination.total;
+
+          if (total === 0 || total === undefined) {
+            total = validators.length;
+          }
+
+          const maxValidators = this.blockchain.max_validators;
+
+          this.quantityOfValidators = `${total} / ${maxValidators}`;
+          this.minimumTokensToBeActive = votingPower;
+        } else if (this.blockchain.current_amount_of_validators) {
+          this.quantityOfValidators = `${this.blockchain.current_amount_of_validators} / ${this.blockchain.max_validators}`;
+        }
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -92,8 +128,8 @@ export default {
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 10px;
   color: white;
-  max-height: 600px;
-  max-width: 800px;
+  max-height: 500px;
+  max-width: 80%;
   overflow-y: auto;
 }
 
@@ -118,7 +154,7 @@ export default {
 }
 
 .details-section {
-  background-color: rgba(133, 121, 153, 0.2);
+  background-color: rgba(133, 121, 153, 0.15);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -148,13 +184,116 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+/* Responsive styles */
+@media (max-width: 767.98px) {
   .blockchain-details {
+    max-height: 500px;
+    max-width: 80%;
     padding: 10px;
   }
 
   .details-section {
     padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p,
+  a {
+    font-size: 0.875em;
+  }
+
+  li {
+    font-size: 0.875em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blockchain-details {
+    padding: 15px;
+  }
+
+  .details-section {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  p,
+  a {
+    font-size: 1em;
+  }
+
+  li {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .blockchain-details {
+    padding: 20px;
+    max-height: 500px;
+  }
+
+  .details-section {
+    padding: 10px 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  p,
+  a {
+    font-size: 1em;
+  }
+
+  li {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blockchain-details {
+    padding: 25px;
+    max-height: 600px;
+  }
+
+  .details-section {
+    padding: 15px 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p,
+  a {
+    font-size: 1em;
+  }
+
+  li {
+    font-size: 1em;
   }
 }
 </style>

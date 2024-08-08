@@ -6,6 +6,7 @@ import CommunityContributionsPage from '../views/CommunityContributionsPage.vue'
 import TechnicalContributionsPage from '../views/TechnicalContributionsPage.vue';
 import ValidatePage from '../views/ValidatePage.vue';
 import BlockchainDetailsPage from '../views/BlockchainDetailsPage.vue';
+import BlockchainsTable from '../views/BlockchainsTable.vue';
 
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
@@ -14,7 +15,9 @@ const routes = [
   { path: '/community-contributions', name: 'CommunityContributions', component: CommunityContributionsPage },
   { path: '/technical-contributions', name: 'TechnicalContributions', component: TechnicalContributionsPage },
   { path: '/validate', name: 'Validate', component: ValidatePage },
-  { path: '/validate/:name', name: 'BlockchainDetails', component: BlockchainDetailsPage, props: true }
+  { path: '/validate/:name', name: 'BlockchainDetails', component: BlockchainDetailsPage, props: true },
+  { path: '/blockchains_table', name: 'BlockchainsTable', component: BlockchainsTable }
+
 ];
 
 const router = createRouter({
